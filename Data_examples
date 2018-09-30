@@ -1,0 +1,20 @@
+#inputs
+{
+  startDate: date,
+  endDate: date,
+  numPerWeek: int,
+  fitnessLevel: {int range 1-10},
+  goalDistance: int,
+  goalTime: timestamp
+}
+
+#outputs
+{
+  days: [
+    '2018-09-16': [{
+      'sport': running|swimming|biking
+      'type' : recovery|interval|endurance
+      'duration': numberOfMinutes
+    }]
+  ]
+}
